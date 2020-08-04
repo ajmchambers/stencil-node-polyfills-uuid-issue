@@ -39,7 +39,7 @@ After setting up 'rollup-plugin-node-polyfills', this error happens in windows:
 
 But runs fine in WSL2.
 
-=====================================
+## Comparing the two
 
 I've included the build results from both into the folders: `/www-windows` and `/www-wsl2`
 
