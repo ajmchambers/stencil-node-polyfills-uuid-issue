@@ -1,4 +1,4 @@
-import { r as registerInstance, h } from './index-4979cd89.js';
+import { r as registerInstance, h } from './index-b72f4a72.js';
 
 // Unique ID creation requires a high quality random # generator. In the browser we therefore
 // require the crypto API and do not support built-in fallback to lower quality random number

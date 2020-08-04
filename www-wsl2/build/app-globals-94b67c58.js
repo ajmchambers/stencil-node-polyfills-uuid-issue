@@ -1,4 +1,4 @@
-import { B as BUILD, C as CSS, p as plt, w as win, a as promiseResolve, c as consoleDevInfo, H, d as doc, N as NAMESPACE } from './index-4979cd89.js';
+import { B as BUILD, C as CSS, p as plt, w as win, a as promiseResolve, c as consoleDevInfo, H, d as doc, N as NAMESPACE } from './index-b72f4a72.js';
 
 const global$1 = (typeof global !== "undefined" ? global :
   typeof self !== "undefined" ? self :
@@ -247,7 +247,7 @@ const patchEsm = () => {
     // @ts-ignore
     if (BUILD.cssVarShim && !(CSS && CSS.supports && CSS.supports('color', 'var(--c)'))) {
         // @ts-ignore
-        return __sc_import_app(/* webpackChunkName: "polyfills-css-shim" */ './css-shim-e7d213b9.js').then(() => {
+        return __sc_import_app(/* webpackChunkName: "polyfills-css-shim" */ './css-shim-a659079f.js').then(() => {
             if ((plt.$cssShim$ = win.__cssshim)) {
                 return plt.$cssShim$.i();
             }
@@ -310,7 +310,7 @@ const patchBrowser = () => {
         if (BUILD.dynamicImportShim && !win.customElements) {
             // module support, but no custom elements support (Old Edge)
             // @ts-ignore
-            return __sc_import_app(/* webpackChunkName: "polyfills-dom" */ './dom-d5f595cc.js').then(() => opts);
+            return __sc_import_app(/* webpackChunkName: "polyfills-dom" */ './dom-4061ceba.js').then(() => opts);
         }
     }
     return promiseResolve(opts);
