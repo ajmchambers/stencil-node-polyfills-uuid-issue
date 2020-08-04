@@ -1,10 +1,6 @@
-import { B as BUILD, C as CSS, p as plt, w as win, a as promiseResolve, c as consoleDevInfo, H, d as doc, N as NAMESPACE } from './index-4979cd89.js';
+import { g as global, B as BUILD, C as CSS, p as plt, w as win, a as promiseResolve, c as consoleDevInfo, H, d as doc, N as NAMESPACE } from './global-7598b9fc.js';
 
-const global$1 = (typeof global !== "undefined" ? global :
-  typeof self !== "undefined" ? self :
-  typeof window !== "undefined" ? window : {});
-
-const __filename = '/home/ajmchambers/Development/stencil-node-polyfills-uuid-issue/node_modules/@stencil/core/internal/client';
+const __filename = '/Development\stencil-node-polyfills-uuid-issue\node_modules\@stencil\core\internal\client';
 
 // shim for using process in browser
 // based off https://github.com/defunctzombie/node-process/blob/master/browser.js
@@ -17,10 +13,10 @@ function defaultClearTimeout () {
 }
 var cachedSetTimeout = defaultSetTimout;
 var cachedClearTimeout = defaultClearTimeout;
-if (typeof global$1.setTimeout === 'function') {
+if (typeof global.setTimeout === 'function') {
     cachedSetTimeout = setTimeout;
 }
-if (typeof global$1.clearTimeout === 'function') {
+if (typeof global.clearTimeout === 'function') {
     cachedClearTimeout = clearTimeout;
 }
 
@@ -169,7 +165,7 @@ function chdir (dir) {
 }function umask() { return 0; }
 
 // from https://github.com/kumavis/browser-process-hrtime/blob/master/index.js
-var performance$1 = global$1.performance || {};
+var performance$1 = global.performance || {};
 var performanceNow =
   performance$1.now        ||
   performance$1.mozNow     ||
@@ -233,11 +229,11 @@ const noop$1 = () => {
 };
 const IS_DENO_ENV = typeof Deno !== 'undefined';
 const IS_NODE_ENV = !IS_DENO_ENV &&
-    typeof global$1 !== 'undefined' &&
+    typeof global !== 'undefined' &&
     typeof require === 'function' &&
-    !!global$1.process &&
+    !!global.process &&
     typeof __filename === 'string' &&
-    (!global$1.origin || typeof global$1.origin !== 'string');
+    (!global.origin || typeof global.origin !== 'string');
 const IS_DENO_WINDOWS_ENV = IS_DENO_ENV && Deno.build.os === 'windows';
 const getCurrentDirectory = IS_NODE_ENV ? browser$1.cwd : IS_DENO_ENV ? Deno.cwd : () => '/';
 const exit = IS_NODE_ENV ? browser$1.exit : IS_DENO_ENV ? Deno.exit : noop$1;
@@ -247,7 +243,7 @@ const patchEsm = () => {
     // @ts-ignore
     if (BUILD.cssVarShim && !(CSS && CSS.supports && CSS.supports('color', 'var(--c)'))) {
         // @ts-ignore
-        return __sc_import_app(/* webpackChunkName: "polyfills-css-shim" */ './css-shim-e7d213b9.js').then(() => {
+        return __sc_import_app(/* webpackChunkName: "polyfills-css-shim" */ './css-shim-a659079f.js').then(() => {
             if ((plt.$cssShim$ = win.__cssshim)) {
                 return plt.$cssShim$.i();
             }
@@ -310,7 +306,7 @@ const patchBrowser = () => {
         if (BUILD.dynamicImportShim && !win.customElements) {
             // module support, but no custom elements support (Old Edge)
             // @ts-ignore
-            return __sc_import_app(/* webpackChunkName: "polyfills-dom" */ './dom-d5f595cc.js').then(() => opts);
+            return __sc_import_app(/* webpackChunkName: "polyfills-dom" */ './dom-4061ceba.js').then(() => opts);
         }
     }
     return promiseResolve(opts);
