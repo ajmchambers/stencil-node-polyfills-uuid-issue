@@ -5,7 +5,7 @@
 Node 14.7.0
 
 ```
-"@stencil/core": "^1.17.2",
+"@stencil/core": "^1.17.3",
 "rollup-plugin-node-polyfills": "^0.2.1",
 "uuid": "^8.3.0"
 ```
