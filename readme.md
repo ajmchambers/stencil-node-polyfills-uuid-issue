@@ -38,3 +38,15 @@ After setting up 'rollup-plugin-node-polyfills', this error happens in windows:
 ![windows error](errorwindows.png)
 
 But runs fine in WSL2.
+
+=====================================
+
+I've included the build results from both into the folders: `/www-windows` and `/www-wsl2`
+
+You can compare the two results using:
+
+`npm run serve:windows`
+
+or
+
+`npm run serve:wsl2`
