@@ -5,6 +5,7 @@
   "description": "Stencil App Starter",
   "scripts": {
     "build": "stencil build",
+    "build:dev": "stencil build --dev",
     "start": "stencil build --dev --watch --serve",
     "serve:windows": "live-server www-windows",
     "serve:wsl2": "live-server www-wsl2"

@@ -19,5 +19,6 @@ export const config: Config = {
     after: [
       nodePolyfills(),
     ]
-  }
+  },
+  hashFileNames: false
 };

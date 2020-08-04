@@ -1,1 +1,7 @@
-import{b as p}from"./p-44f55525.js";import{p as o}from"./p-93b18214.js";o().then(o=>p([["p-81b89223",[[1,"app-root"]]]],o));
+import { b as bootstrapLazy } from './global-bed5172d.js';
+import { p as patchBrowser, g as globalScripts } from './app-globals-0f46edaa.js';
+
+patchBrowser().then(options => {
+  globalScripts();
+  return bootstrapLazy([["app-root",[[1,"app-root"]]]], options);
+});
